@@ -3,4 +3,5 @@ Code source pour des exercises de cours
 
 ## Diagramme de classes
 
-![classes exercice modifié](https://github.com/user-attachments/assets/cbfaadc6-5d1f-4049-a42b-636de09d4be8)
+![classes exercice modifié](https://github.com/user-attachments/assets/a1aa0fe0-c887-4990-9ee6-56f9ffb407c5)
+
