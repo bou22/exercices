@@ -1,9 +1,12 @@
 <?php declare(strict_types=1);
 
+include_once 'InterfaceInterupteur.php';
+include_once 'InterfaceThermosthat.php';
+
 final class Affichage
 {
-    protected InterfaceThermostat eau;
-    protected InterfaceThermostat vapeur;
+    protected InterfaceThermostat $eau;
+    protected InterfaceThermostat $vapeur;
 
     public function __construct ()
     {
@@ -13,10 +16,10 @@ final class Affichage
 
     public function getEtats(): array
     {
-        $thermostats = array();
+        $listeThermostats = array();
 
-        array_push($thermostats,$this->eau->verifier(),$this->vapeur->verifier());
+        array_push($listeThermostats,$this->eau->verifier(),$this->vapeur->verifier());
 
-        return $thermostats;
+        return $listeThermostats;
     }
 }

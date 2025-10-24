@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-final class Appareil
+class Appareil
 {
     public function getLecture(): float
     {

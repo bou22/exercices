@@ -1,8 +1,10 @@
 <?php declare(strict_types=1);
 
+include_once 'InterfaceInterupteur.php';
+
 final class Bouilloire implements InterfaceInterupteur
 {
-    bool etat;
+    protected bool $etat;
 
     public function __construct ()
     {
@@ -11,7 +13,7 @@ final class Bouilloire implements InterfaceInterupteur
 
     public function changer(bool $action): bool
     {
-        $this->etat = action;
+        $this->etat = $action;
         return $this->etat;
     }
 }

@@ -2,6 +2,5 @@
 
 interface InterfaceThermostat 
 {
-    public function allumer(): bool;
-    public function eteindre(): bool;
+    public function verifier(): bool;
 }
