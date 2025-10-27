@@ -11,9 +11,12 @@ final class Vapeur implements InterfaceThermostat
 
     public function __construct()
         {
-            $this->appareil = new Appareil();
             $this->bouilloire = new Bouilloire();
             $this->lumiere = new Lumiere();
+        }
+
+        public function setAppareil($a){
+            $this->appareil = $a;
         }
 
         public function verifier(): bool
