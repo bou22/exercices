@@ -2,6 +2,6 @@
 
 interface InterfaceThermostat 
 {
-    public function setAppareil($a): null;
+    public function setAppareil($a): bool;
     public function verifier(): bool;
 }

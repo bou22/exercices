@@ -16,8 +16,9 @@ final class Eau implements InterfaceThermostat
             $this->lumiere = new Lumiere();
         }
 
-        public function setAppareil($a){
+        public function setAppareil($a):bool{
             $this->appareil = $a;
+            return true; //Pour focuser la complexité sur le test
         }
 
         public function verifier(): bool
